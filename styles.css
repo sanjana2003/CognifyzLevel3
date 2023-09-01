@@ -1,63 +1,100 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  font-family: Arial, sans-serif;
-  color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-  background-color: #444;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.thumbnail {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.thumbnail:hover {
-  transform: scale(1.1);
+h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
-.slideshow-container {
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
+.subheading {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
 }
 
-.slideshow-container img {
-  max-width: 100%;
-  height: auto;
-  transition: opacity 1s ease-in-out;
+.intro {
+    margin-bottom: 40px;
 }
 
-.slide {
-  display: none;
+.highlights h2, .qualifications h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-.prev {
-  left: 10px;
+.cta {
+    text-align: center;
+    margin-top: 40px;
 }
 
-.next {
-  right: 10px;
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #f7f9fc;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a i {
+    font-size: 20px;
 }

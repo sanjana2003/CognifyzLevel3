@@ -1,23 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// JavaScript for redirection on "Apply Now" button click
+const applyButton = document.querySelector('.btn');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  let slides = document.querySelectorAll(".slide");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-}
+applyButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = applyButton.getAttribute('href');
+});
